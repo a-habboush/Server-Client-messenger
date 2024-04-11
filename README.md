@@ -5,7 +5,7 @@ Uses JavaFX and FXML for GUI.
 
 =======================================================================================
 
-** How to install: **
+**How to install:**
 
 1. Download and run the latest version installer from releases.
 
