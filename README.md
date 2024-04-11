@@ -3,7 +3,7 @@
 Java Server-Client UI messenger app hosted on your local network port:12345 using the socket API.
 Uses JavaFX and FXML for GUI.
 
-=======================================================================================
+===========================================================================
 
 **How to install:**
 
