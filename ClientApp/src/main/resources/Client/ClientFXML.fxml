@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainScreen" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: darkgrey;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller">
+    <bottom>
+        <JFXToolbar maxHeight="39.0" maxWidth="485.0" prefHeight="39.0" prefWidth="334.0" BorderPane.alignment="BOTTOM_RIGHT">
+            <left>
+                <TextField fx:id="insertBox" prefHeight="30.0" prefWidth="395.0" BorderPane.alignment="CENTER" />
+            </left>
+            <BorderPane.margin>
+                <Insets bottom="2.0" left="10.0" right="10.0" />
+            </BorderPane.margin>
+         <right>
+            <JFXButton fx:id="sendButton" buttonType="RAISED" onAction="#send" prefHeight="30.0" prefWidth="30.0" ripplerFill="#bcbcbc" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets right="2.0" />
+               </padding>
+            </JFXButton>
+         </right>
+        </JFXToolbar>
+    </bottom>
+    <center>
+        <ScrollPane fx:id="ChatBox" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="509.0" prefWidth="430.0" vmax="1.2" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets left="10.0" right="10.0" top="20.0" />
+            </BorderPane.margin>
+         <content>
+                <VBox fx:id="chatVbox" alignment="BOTTOM_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="507.0" prefWidth="428.0" translateX="10.0">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+                </VBox>
+         </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
